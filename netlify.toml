@@ -1,0 +1,6 @@
+# Static site — no build step required.
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
