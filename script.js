@@ -26,6 +26,9 @@
       "*Name:* " +
       data.name +
       "\n" +
+      "*Age:* " +
+      data.age +
+      "\n" +
       "*City:* " +
       data.city +
       "\n" +
@@ -78,11 +81,18 @@
 
   var form = document.getElementById("consultation-form");
   var nameInput = document.getElementById("field-name");
+  var ageInput = document.getElementById("field-age");
   var cityInput = document.getElementById("field-city");
   var countryInput = document.getElementById("field-country");
   var caseSelect = document.getElementById("field-case");
   var messageInput = document.getElementById("field-message");
   var submitHint = document.querySelector(".submit-hint");
+
+  ageInput.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+      event.preventDefault();
+    }
+  });
 
   /* ----------------------------------------------------------
      Populate disease dropdown
@@ -135,6 +145,17 @@
       },
 
       message: "Please enter your name.",
+    },
+
+    {
+      input: ageInput,
+      field: "age",
+
+      test: function () {
+        return ageInput.value !== "" && Number(ageInput.value) > 0 && Number(ageInput.value) <= 120;
+      },
+
+      message: "Please enter a valid age.",
     },
 
     {
@@ -270,6 +291,7 @@
 
     var consultationData = {
       name: nameInput.value.trim(),
+      age: ageInput.value.trim(),
       city: cityInput.value.trim(),
       country: countryInput.value.trim(),
       caseType: caseSelect.value.trim(),

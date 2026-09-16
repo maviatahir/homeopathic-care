@@ -16,18 +16,11 @@
   /* Disease / case types shown in the consultation dropdown.
      Edit freely according to the cases handled by the doctor. */
   var DISEASE_OPTIONS = [
-    "General Consultation",
-    "Migraine / Headache",
-    "Digestive Problems",
-    "Skin Problems",
-    "Allergies",
-    "Respiratory Problems",
-    "Joint / Muscle Problems",
-    "Sleep Problems",
-    "Anxiety / Stress",
-    "Women's Health",
-    "Children's Health",
-    "Other",
+    "Cancer (All Types)",
+    "Cerebral Palsy (Child)",
+    "Congenital Diseases",
+    "Thalassemia Dialysis",
+    "Gangrene",
   ];
 
   /* Branding text used in the page and in the WhatsApp message. */

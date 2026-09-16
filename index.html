@@ -152,13 +152,24 @@
 
         <div class="form-card reveal">
           <form id="consultation-form" novalidate>
-            <div class="field">
-              <label for="field-name">
-                Full Name <span class="required" aria-hidden="true">*</span>
-              </label>
-              <input id="field-name" name="name" type="text" autocomplete="name" maxlength="120"
-                placeholder="Enter your full name" aria-describedby="error-name" required />
-              <p class="field-error" id="error-name" role="alert"></p>
+            <div class="field-row">
+              <div class="field">
+                <label for="field-name">
+                  Full Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input id="field-name" name="name" type="text" autocomplete="name" maxlength="120"
+                  placeholder="Enter your full name" aria-describedby="error-name" required />
+                <p class="field-error" id="error-name" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="field-age">
+                  Age <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input id="field-age" name="age" type="number" min="1" max="120" inputmode="numeric"
+                  placeholder="e.g. 32" aria-describedby="error-age" required />
+                <p class="field-error" id="error-age" role="alert"></p>
+              </div>
             </div>
 
             <div class="field-row">
