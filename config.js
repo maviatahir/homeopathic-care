@@ -21,6 +21,7 @@
     "Congenital Diseases",
     "Thalassemia Dialysis",
     "Gangrene",
+    "Incurable Disease Treatment DNA Therapy"
   ];
 
   /* Branding text used in the page and in the WhatsApp message. */

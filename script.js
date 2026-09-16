@@ -94,6 +94,10 @@
     }
   });
 
+  ageInput.addEventListener("wheel", function (event) {
+    event.preventDefault();
+  }, { passive: false });
+
   /* ----------------------------------------------------------
      Populate disease dropdown
      ---------------------------------------------------------- */
