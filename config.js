@@ -19,7 +19,8 @@
     "Cancer (All Types)",
     "Cerebral Palsy (Child)",
     "Congenital Diseases",
-    "Thalassemia Dialysis",
+    "Thalassemia",
+    "Dialysis",
     "Gangrene",
     "Incurable Disease Treatment DNA Therapy"
   ];
